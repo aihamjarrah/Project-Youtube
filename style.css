@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+.firstdiv {
+    /* position: absolute;
+    top: 0px; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: 10px 300px;
+    border: 2px solid darkblue;
+    /* justify-content: center;  */
+    align-items: center;
+    grid-template-areas: "list search channel";
+    justify-content: space-between;
+    
+}
+.dashes{
+    list-style: none;
+    grid-area: list;
+    align-self: flex-start;
+}
+.search {
+    grid-area: search;
+    align-self: center;
+}
+
