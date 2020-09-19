@@ -1,7 +1,9 @@
 body{
     display: grid;
     justify-content: space-between;
-    margin-top: 140px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    
 }
 .firstdiv {
     /* position: absolute;
@@ -12,7 +14,7 @@ body{
     left: 0px;
     display: grid;
     grid-template-columns: 10px 300px;
-    border: 2px solid darkblue;
+    
     /* justify-content: center;  */
     align-items: center;
     grid-template-areas: "list search channel";
@@ -28,4 +30,51 @@ body{
     grid-area: search;
     align-self: center;
 }
+.seconddiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0px;
+    left: 1120px;
+    justify-content: space-between;
 
+    
+    
+    
+    
+    
+
+}
+[class*="pic"] {
+    width: 130px;
+    height: 70px;
+}
+[class*="text"] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    left:  150px;
+    bottom: 90px;
+    
+    
+
+}
+
+
+[class*="photodiv"] {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+    
+
+
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+    
+    
+}

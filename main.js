@@ -57,6 +57,23 @@ const videos = [
       thumbnail: "https://img.youtube.com/vi/RmpuhbdnAfQ/maxresdefault.jpg",
     },
   ];
-const videosList = $(`<ul class = 'vedioslist'></ul>`)
-secDiv.append(videosList)
-  
+
+
+videos.forEach(function(element, index) {
+    const innerDiv = $(`<div class = "photodiv${index}"></div>`)
+    const img = $(`<img src="${element.thumbnail}" class = "pic${index}">`)
+    const text = $(`<p class="text${index}">${element.title}</p>`)
+    secDiv.append(innerDiv)
+    innerDiv.append(img)
+    innerDiv.append(text)
+
+
+
+    
+    
+    
+    
+     
+})  
+
+
