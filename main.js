@@ -1,3 +1,4 @@
+//Creating the search bar
 const fDiv  = $(`<div class="firstdiv"></div>`)
 const body = $(`body`);
 body.append(fDiv);
@@ -13,8 +14,7 @@ iList.forEach(function (element, index) {
 fDiv.append(firstUl)
 const srButton = $(`<button class = "searchbutton">s</button>`)
 search.append(srButton)
-const secDiv = $(`<div class="seconddiv"></div>`)
-body.append(secDiv)
+
 const videos = [
     {
       id: "7yLxxyzGiko",
@@ -57,23 +57,27 @@ const videos = [
       thumbnail: "https://img.youtube.com/vi/RmpuhbdnAfQ/maxresdefault.jpg",
     },
   ];
-
+//making the vedio list by creating a container and creating a new div with the image and the title inside
+const secDiv = $(`<div class="seconddiv"></div>`)
+body.append(secDiv)
 
 videos.forEach(function(element, index) {
-    const innerDiv = $(`<div class = "photodiv${index}"></div>`)
+    const innerDiv = $(`<div class="in${index}"></div>`)
+    
     const img = $(`<img src="${element.thumbnail}" class = "pic${index}">`)
     const text = $(`<p class="text${index}">${element.title}</p>`)
-    secDiv.append(innerDiv)
     innerDiv.append(img)
     innerDiv.append(text)
-
-
+    secDiv.append(innerDiv)
+})
+//Creating a function that plays the vedio when clicking on the image or the title 
+const play = $()
 
     
     
     
     
      
-})  
+
 
 

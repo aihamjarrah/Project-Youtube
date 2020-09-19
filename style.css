@@ -6,16 +6,12 @@ body{
     
 }
 .firstdiv {
-    /* position: absolute;
-    top: 0px; */
     position: absolute;
     top: 0px;
     right: 0px;
     left: 0px;
     display: grid;
     grid-template-columns: 10px 300px;
-    
-    /* justify-content: center;  */
     align-items: center;
     grid-template-areas: "list search channel";
     justify-content: space-between;
@@ -31,43 +27,52 @@ body{
     align-self: center;
 }
 .seconddiv {
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     position: absolute;
     right: 0px;
     left: 1120px;
     justify-content: space-between;
-
-    
-    
-    
-    
-    
-
+}
+[class*="in"] {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: row;
 }
 [class*="pic"] {
+    /* border: 1px solid blue; */
     width: 130px;
     height: 70px;
 }
+    
 [class*="text"] {
+    /* border: 1px solid green; */
+    float: right;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;
+    width: 200px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: clip;
     position: relative;
-    left:  150px;
-    bottom: 90px;
-    
-    
+    top: -15px;
+    left: 10px;
 
 }
 
 
-[class*="photodiv"] {
+
+[class*="textdiv"] {
     
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    
     flex-wrap: wrap;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+
     
     
     
@@ -76,5 +81,5 @@ body{
     /* overflow: hidden;
     text-overflow: ellipsis; */
     
-    
+
 }
