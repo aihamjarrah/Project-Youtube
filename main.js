@@ -63,6 +63,10 @@ body.append(secDiv)
 
 videos.forEach(function(element, index) {
     const innerDiv = $(`<div class="in${index}"></div>`)
+    innerDiv.click(function(){
+        const iFrame = $("iframe")
+        iFrame.attr("src",`https://www.youtube.com/embed/${element.id}`)
+    })
     
     const img = $(`<img src="${element.thumbnail}" class = "pic${index}">`)
     const text = $(`<p class="text${index}">${element.title}</p>`)
@@ -70,8 +74,65 @@ videos.forEach(function(element, index) {
     innerDiv.append(text)
     secDiv.append(innerDiv)
 })
+//Creating the vedio description space 
+// const title = $(`<div class="container"></div>`)
+// body.append(title)
+
 //Creating a function that plays the vedio when clicking on the image or the title 
-const play = $()
+
+    
+    
+
+// $(".pic0").click(function(){
+//     const iFrame= document.querySelector("iframe") 
+//     let play = iFrame.src
+//     play = "https://www.youtube.com/embed/"+`${vedios[0].id}`
+// })
+// $(".pic1").click(function(){
+//     const iFrame= document.querySelector("iframe") 
+//     let play = iFrame.src
+//     play = "https://www.youtube.com/embed/"+`${vedios[1].id}`
+// })
+// $(".pic2").click(function(){
+//     const iFrame= document.querySelector("iframe") 
+//     let play = iFrame.src
+//     play = "https://www.youtube.com/embed/"+`${vedios[2].id}`
+// })
+// $(".pic3").click(function(){
+//     const iFrame= document.querySelector("iframe") 
+//     let play = iFrame.src
+//     play = "https://www.youtube.com/embed/"+`${vedios[3].id}`
+// })
+// $(".pic4").click(function(){
+//     const iFrame= document.querySelector("iframe") 
+//     let play = iFrame.src
+//     play = "https://www.youtube.com/embed/"+`${vedios[4].id}`
+// })
+// $(".pic5").click(function(){
+//     const iFrame= document.querySelector("iframe") 
+//     let play = iFrame.src
+//     play = "https://www.youtube.com/embed/"+`${vedios[5].id}`
+// })
+// $(".pic6").click(function(){
+//     const iFrame= document.querySelector("iframe") 
+//     let play = iFrame.src
+//     play = "https://www.youtube.com/embed/"+`${vedios[6].id}`
+// })
+// $(".pic7").click(function(){
+//     const iFrame= document.querySelector("iframe") 
+//     let play = iFrame.src
+//     play = "https://www.youtube.com/embed/"+`${vedios[7].id}`
+// })
+// $(".pic8").click(function(){
+//     const iFrame= document.querySelector("iframe") 
+//     let play = iFrame.src
+//     play = "https://www.youtube.com/embed/"+`${vedios[8].id}`
+// })
+
+
+
+
+
 
     
     

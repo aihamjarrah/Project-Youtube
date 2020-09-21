@@ -30,6 +30,7 @@ body{
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
+    gap: 10px;
     position: absolute;
     right: 0px;
     left: 1120px;
@@ -39,6 +40,7 @@ body{
     /* border: 1px solid yellow; */
     display: flex;
     flex-direction: row;
+    
 }
 [class*="pic"] {
     /* border: 1px solid blue; */
@@ -58,28 +60,5 @@ body{
     position: relative;
     top: -15px;
     left: 10px;
-
-}
-
-
-
-[class*="textdiv"] {
-    
-    display: flex;
-    flex-direction: column;
-    
-    flex-wrap: wrap;
-    position: absolute;
-    top: 0px;
-    right: 50px;
-
-    
-    
-    
-
-
-    /* overflow: hidden;
-    text-overflow: ellipsis; */
-    
 
 }
