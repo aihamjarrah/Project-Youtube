@@ -2,16 +2,63 @@
 const fDiv  = $(`<div class="firstdiv"></div>`)
 const body = $(`body`);
 body.append(fDiv);
-const search = $(`<input class="search" type = text placeholder = Search> `)
-fDiv.append(search)
-// const firstUl = $(`<ul class="dashes"></ul>`)
+const form = $(`<form class="example" action="action_page.php">  <input type="text" placeholder="Search" name="search" onkeyup="myfunction()">
+<button type="submit"><i class="fa fa-search"></i></button></form>`)
+fDiv.append(form)
 
-// const iList = [1,2,3]
-// iList.forEach(function (element, index) {
-//     const li = $(`<li class="list${index}">${element}<li>`)
-//     firstUl.append(li) 
-// });
-// fDiv.append(firstUl)
+// const myfunction = function(){
+//   const searchList = $(`<div class="namelist"></div>`)
+//   form.append(searchList)
+
+//   if(input.val().startsWith(videos[0].title[0]|| videos[0].title[1])) {
+//     const nameDiv0 = $(`<div class="namediv"><p class="result">${vedios[0].title}</p></div>`)
+//     searchList.append(nameDiv)
+//   }
+//   else if(input.val().startsWith(videos[1].title[0]|| videos[1].title[1])) {
+//     const nameDiv1 = $(`<div class="namediv"><p class="result">${vedios[1].title}</p></div>`)
+//     searchList.append(nameDiv)
+//   }
+//   else if(input.val().startsWith(videos[2].title[0]|| videos[2].title[1])) {
+//     const nameDiv2 = $(`<div class="namediv"><p class="result">${vedios[2].title}</p></div>`)
+//     searchList.append(nameDiv)
+//   }
+//   else if(input.val().startsWith(videos[3].title[0]|| videos[3].title[1])) {
+//     const nameDiv3 = $(`<div class="namediv"><p class="result">${vedios[3].title}</p></div>`)
+//     searchList.append(nameDiv)
+//   }
+//   else if(input.val().startsWith(videos[4].title[0]|| videos[4].title[1])) {
+//     const nameDiv4 = $(`<div class="namediv"><p class="result">${vedios[4].title}</p></div>`)
+//     searchList.append(nameDiv)
+//   }
+//   else if(input.val().startsWith(videos[5].title[0]|| videos[5].title[1])) {
+//     const nameDiv5 = $(`<div class="namediv"><p class="result">${vedios[5].title}</p></div>`)
+//     searchList.append(nameDiv)
+//   }
+//   else if(input.val().startsWith(videos[6].title[0]|| videos[6].title[1])) {
+//     const nameDiv6 = $(`<div class="namediv"><p class="result">${vedios[6].title}</p></div>`)
+//     searchList.append(nameDiv)
+//   }
+//   else if(input.val().startsWith(videos[7].title[0]|| videos[7].title[1])) {
+//     const nameDiv7 = $(`<div class="namediv"><p class="result">${vedios[7].title}</p></div>`)
+//     searchList.append(nameDiv)
+//   }
+//   else if(input.val().startsWith(videos[8].title[0]|| videos[8].title[1])) {
+//     const nameDiv8 = $(`<div class="namediv"><p class="result">${vedios[8].title}</p></div>`)
+//     searchList.append(nameDiv)
+//   }
+//   else if(input.val() === ""){
+//     for(let i=0 ; i <10; i++) {
+//       searchList.append(`nameDiv${index}`)
+//     }
+    
+
+//   }
+// }
+
+
+
+
+//Creating the menu icon
 const menuCon = $(`<div class="bigMenu"></div>`)
 fDiv.append(menuCon)
 const menuIcon = $(`<div class="menu"></div>`)
@@ -20,8 +67,11 @@ const menuIcon3 = $(`<div class="menu"></div>`)
 menuCon.append(menuIcon)
 menuCon.append(menuIcon2)
 menuCon.append(menuIcon3)
-const srButton = $(`<button class = "searchbutton">s</button>`)
-search.append(srButton)
+//Creating other icons in the search bar 
+const iconDiv = $(`<div class="icons"></div>`)
+fDiv.append(iconDiv)
+const signIn = $(`<button class="signin"><i class="fa fa-sign-in"></i></button>`)
+iconDiv.append(signIn)
 
 const videos = [
     {

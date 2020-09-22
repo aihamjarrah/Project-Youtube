@@ -7,14 +7,16 @@ body{
 }
 .firstdiv {
     position: absolute;
-    top: 0px;
+    top: 10px;
     right: 0px;
     left: 0px;
+    height: 70px;
     /* display: grid; */
     grid-template-columns: 10px 300px;
     align-items: center;
     /* grid-template-areas: "list search channel"; */
     justify-content: space-between;
+    background-color: whitesmoke;
     
 }
 .menu{
@@ -25,23 +27,57 @@ body{
     
 }
 .bigMenu{
-    position: relative;
+    position: absolute;
     left: 30px;
-    bottom:25px;
+    top: 20px;
+    cursor: pointer;
 }
 /* .dashes{
     list-style: none;
     grid-area: list;
     align-self: flex-start;
 } */
-.search {
+/* .search {
     width: 400px;
     height: 20px;
     grid-area: search;
     align-self: center;
     margin-left: 550px;
     margin-top: 20px;
+    cursor: text;
+} */
+form.example input[type=text]{
+    font-size: 17px;
+    border: 1px solid gray;
+    width: 400px;
+    float: left;
+    margin-left: 500px;
+    margin-top: 20px;
+    
+    
 }
+form.example button {
+    position: absolute;
+    top: 20px;
+    width: 50px;
+    color: grey;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+    background-color: white;
+    
+}
+/* .namelist{
+    border: 1px solid black;
+} */
+.listcontainer{
+    display: flex;
+    border: 1px solid gray;
+    position: relative;
+    top: 400px;
+}
+  
 .seconddiv {
     /* border: 1px solid black; */
     display: flex;
@@ -73,7 +109,7 @@ body{
     white-space: nowrap;
     width: 200px;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis;
     position: relative;
     top: -15px;
     left: 10px;
@@ -95,7 +131,7 @@ hr {
     font-size: 20px;
     position: relative;
     bottom: 20px;
-    right: 200px;
+    right: 250px;
     cursor: pointer;
 }
 .dislike{
@@ -105,7 +141,7 @@ hr {
     font-size: 20px;
     position: relative;
     bottom: 20px;
-    right: 200px;
+    right: 250px;
     cursor: pointer;
 }
 .share{
@@ -114,16 +150,18 @@ hr {
     border: none;
     position: relative;
     bottom: 20px;
-    right: 200px;
+    right: 250px;
     cursor: pointer;
+    font-size: 20px;
 }
 .save{
+    font-size: 20px;
     background-color: white;
     color: black;
     border: none;
     position: relative;
     bottom: 20px;
-    right: 200px;
+    right: 250px;
     cursor: pointer;
 }
 .channelimg{
@@ -132,12 +170,14 @@ hr {
     border-radius: 80px;
     position: relative;
     left: 20px;
+    cursor: pointer;
 }
 .channelname{
     font-size: 16px;
     position: relative;
     left: 85px;
     bottom: 60px;
+    cursor: pointer;
 }
 .sub{
     background-color: #f00;
@@ -145,6 +185,7 @@ hr {
     left: 1030px;
     bottom: 110px;
     color: white;
+    cursor: pointer;
 }
 .numbersub{
     font-size: 10px;
@@ -173,4 +214,12 @@ hr {
 .headercom{
     position: relative;
     left: 20px;
+}
+.signin{
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
 }
