@@ -199,55 +199,6 @@ num.forEach(function(element,index){
 
 })
 
-//This is a wrong practice, it is better to add the event listener to the for loop because if you have a list with a number of items it's not good to do these steps 
-// $(".pic0").click(function(){
-//     const iFrame= document.querySelector("iframe") 
-//     let play = iFrame.src
-//     play = "https://www.youtube.com/embed/"+`${vedios[0].id}`
-// })
-// $(".pic1").click(function(){
-//     const iFrame= document.querySelector("iframe") 
-//     let play = iFrame.src
-//     play = "https://www.youtube.com/embed/"+`${vedios[1].id}`
-// })
-// $(".pic2").click(function(){
-//     const iFrame= document.querySelector("iframe") 
-//     let play = iFrame.src
-//     play = "https://www.youtube.com/embed/"+`${vedios[2].id}`
-// })
-// $(".pic3").click(function(){
-//     const iFrame= document.querySelector("iframe") 
-//     let play = iFrame.src
-//     play = "https://www.youtube.com/embed/"+`${vedios[3].id}`
-// })
-// $(".pic4").click(function(){
-//     const iFrame= document.querySelector("iframe") 
-//     let play = iFrame.src
-//     play = "https://www.youtube.com/embed/"+`${vedios[4].id}`
-// })
-// $(".pic5").click(function(){
-//     const iFrame= document.querySelector("iframe") 
-//     let play = iFrame.src
-//     play = "https://www.youtube.com/embed/"+`${vedios[5].id}`
-// })
-// $(".pic6").click(function(){
-//     const iFrame= document.querySelector("iframe") 
-//     let play = iFrame.src
-//     play = "https://www.youtube.com/embed/"+`${vedios[6].id}`
-// })
-// $(".pic7").click(function(){
-//     const iFrame= document.querySelector("iframe") 
-//     let play = iFrame.src
-//     play = "https://www.youtube.com/embed/"+`${vedios[7].id}`
-// })
-// $(".pic8").click(function(){
-//     const iFrame= document.querySelector("iframe") 
-//     let play = iFrame.src
-//     play = "https://www.youtube.com/embed/"+`${vedios[8].id}`
-// })
-
-
-
 
 
 
